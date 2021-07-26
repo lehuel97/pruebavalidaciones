@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<%- include('partials/head')%>
+
+    <body>
+
+        <%- include('partials/header')  %>
+
+            <main class="login2">
+                <section class="inicio-secion2">
+                    <input type="checkbox" id="click">
+                    <label for="click" class="chatsito">
+                <i class="fab fa-facebook-messenger"></i>
+                <i class="fas fa-times"></i>
+            </label>
+                    <div class="box2">
+                        <div class="head-text">
+                            Querés Hablar? - Online</div>
+                        <div class="chat-box">
+                            <div class="desc-text">
+                                Por favor este chat es para uso comercial, no incurra en cualquier tipo de violencia</div>
+                            <form action="#" method="POST" enctype="multipart/form-data">
+                                <div class="field">
+                                    <input type="text" placeholder="Nombre" required>
+                                </div>
+                                <div class="field">
+                                    <input type="email" placeholder="Email" name="imagen" required>
+                                </div>
+                                <div class="field textarea">
+                                    <changeit cols="30" rows="10" placeholder="Explain your queries.." required></changeit>
+                                </div>
+                                <div class="field">
+                                    <button type="submit">Iniciar Chat</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <section class="login">
+                        <form class="formulario" action="/users/registro" method="POST" enctype="multipart/form-data" id="formularioReg">
+                            <h1>Registrate</h1>
+                            <div class="contenedor">
+
+                                <div class="input-contenedor">
+                                    <label for="nombre" class="formulario__label">Nombre y apellido</label>
+                                    <i class="fas fa-user icon"></i>
+                                    <input type="text" name="nombre" id="nombre" class="formulario__input">
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                    <p class="formulario__input-error">El nombre y apellido solo puede contener letras y espacios.</p>
+                                </div>
+                                <div class="input-contenedor">
+                                    <label for="nombreUsuario" class="formulario__label">Nombre de usuario</label>
+                                    <i class="fas fa-user icon"></i>
+                                    <input type="text" name="Usuario" id="usuario" class="formulario__input">
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                    <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                                </div>
+
+                                <div class="input-contenedor">
+                                    <label for="correo" class="formulario__label">Correo</label>
+                                    <i class="fas fa-envelope icon"></i>
+                                    <input type="email" name="correo" id="correo" class="formulario__input">
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                    <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.
+                                </div>
+
+
+                                <div class="input-contenedor">
+                                    <label for="password" class="formulario__label">Contraseña</label>
+                                    <i class="fas fa-key icon"></i>
+                                    <input type="password" name="password" id="password" class="formulario__input">
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                    <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+
+                                </div>
+                                <div class="input-contenedor">
+                                    <label for="password2" class="formulario__label">Repita su contraseña</label>
+                                    <i class="fas fa-key icon"></i>
+                                    <input type="password" name="password2" id="password2" class="formulario__input">
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                    <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+
+                                </div>
+
+                                <div class="input-contenedor">
+                                    <i class="fas fa-user"></i>
+                                    <input type="file" name="imagenAvatar">
+
+                                </div>
+                                <input type="submit" value="Registrate" class="button">
+                                <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+                                <p>¿Ya tienes una cuenta?<a class="link" href="/users/inicio-sesion">Iniciar Sesion</a></p>
+                            </div>
+                        </form>
+                    </section>
+                </section>
+                <%- include('partials/footer.ejs')  %>
+            </main>
+            <script src="js/formulario.js"></script>
+    </body>
+
+</html>

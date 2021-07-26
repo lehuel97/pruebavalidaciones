@@ -1,0 +1,23 @@
+[
+ {
+  "id": 1,
+  "nombre": "Robert Dawley Jr",
+  "email": "brayann.fave@gmail.com",
+  "clave": "$2a$10$Bspd14/2Zoz6XRCG7Y4mrOkim8B4Icw408rBjnP0iD2VsMC6uSojO",
+  "imageUsuario": "usuario1621656813682.jpg"
+ },
+ {
+  "id": 4,
+  "nombre": "lehuel",
+  "email": "lehuisp@gmail.com",
+  "clave": "$2a$10$cFDKOa0XgNQ4kJD1S/eMguKJn7f2kiVZbzS1lafQH1Kf6elzsW8IG",
+  "imageUsuario": "index.png"
+ },
+ {
+  "id": 5,
+  "nombre": "Omar Urzi",
+  "email": "omar@gmail.com",
+  "clave": "$2a$10$12cX/MGOjhA1I1J1CbW4rOUv05271v9UABCvEPw/ZkWiEDJyjRH3.",
+  "imageUsuario": "index.png"
+ }
+]
