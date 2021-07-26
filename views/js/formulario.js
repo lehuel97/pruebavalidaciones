@@ -77,6 +77,8 @@ const validarPassword2 = () => {
 }
 
 inputs.forEach((input) => {
-    input.addEventListener('keyup', validarFormulario);
+    input.addEventListener('keyup', () => {
+        console.log("tecla levantada")
+    });
     input.addEventListener('blur', validarFormulario);
 });
